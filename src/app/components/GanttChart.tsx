@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Gantt, Willow } from "@svar-ui/react-gantt";
+import { Gantt, Willow, Editor } from "@svar-ui/react-gantt";
 import "@svar-ui/react-gantt/all.css";
 
 const tasks = [
@@ -96,6 +96,7 @@ const scales = [
 
 export default function GanttChart() {
   const [mounted, setMounted] = useState(false);
+  const [api, setApi] = useState(null);
 
   useEffect(() => {
     setMounted(true);
@@ -108,7 +109,8 @@ export default function GanttChart() {
   return (
     <div style={{ height: "100%", width: "100%" }}>
       <Willow>
-        <Gantt tasks={tasks} links={links} scales={scales} />
+        <Gantt tasks={tasks} links={links} scales={scales} init={setApi} />
+        {api && <Editor api={api} />}
       </Willow>
     </div>
   );

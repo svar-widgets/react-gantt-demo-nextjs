@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SVAR React Gantt + Next.js Demo
 
-## Getting Started
+Demo project showing how to integrate free, open-source [SVAR React Gantt](https://svar.dev/react/gantt/) into a Next.js (App Router) application with TypeScript.
 
-First, run the development server:
+This repository demonstrates:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Adding an interactive Gantt chart to a Next.js project
+- Using SVAR Gantt’s Toolbar and Editor for task management
+- Persisting tasks and links with a backend (SQLite + REST API)
+- Addressing practical Next.js considerations such as CSS imports, SSR hydration warnings, and full-page layouts
+- Implementing row reordering, drag-and-drop, and editing operations
+
+Find the integration guide (2 parts) in the SVAR Gantt documentation: [Next.js Integration](https://docs.svar.dev/react/gantt/category/nextjs)
+
+### Quick Start
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/svar-widgets/react-gantt-nextjs.git
+cd react-gantt-nextjs
+npm install
+npm run dev
+```
+Open http://localhost:3000 to see the demo in action.

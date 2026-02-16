@@ -1,22 +1,36 @@
-# SVAR React Gantt + Next.js Demo
+# SVAR React Gantt + Next.js
 
-Demo project showing how to integrate free, open-source [SVAR React Gantt](https://svar.dev/react/gantt/) into a Next.js (App Router) application with TypeScript.
+An interactive Gantt chart in a Next.js app — built with the open-source [SVAR React Gantt](https://svar.dev/react/gantt/) widget, TypeScript, and SQLite.
 
-This repository demonstrates:
+## Quick Start
 
-- Adding an interactive Gantt chart to a Next.js project
-- Using SVAR Gantt’s Toolbar and Editor for task management
-- Persisting tasks and links with a backend (SQLite + REST API)
-- Addressing practical Next.js considerations such as CSS imports, SSR hydration warnings, and full-page layouts
-- Implementing row reordering, drag-and-drop, and editing operations
-
-Find the integration guide (2 parts) in the SVAR Gantt documentation: [Next.js Integration](https://docs.svar.dev/react/gantt/category/nextjs)
-
-### Quick Start
 ```
-git clone https://github.com/svar-widgets/react-gantt-nextjs.git
-cd react-gantt-nextjs
+git clone https://github.com/svar-widgets/react-gantt-demo-nextjs.git
+cd react-gantt-demo-nextjs
 npm install
 npm run dev
 ```
-Open http://localhost:3000 to see the demo in action.
+
+Open http://localhost:3000.
+
+## Branches
+
+Each branch shows a different stage of the integration:
+
+- [`basic`](https://github.com/svar-widgets/react-gantt-demo-nextjs/tree/basic) — client-side only, no backend
+- [`backend`](https://github.com/svar-widgets/react-gantt-demo-nextjs/tree/backend) — adds REST API + SQLite persistence
+- [`main`](https://github.com/svar-widgets/react-gantt-demo-nextjs/tree/main) — full demo (same as `backend` for now)
+
+## Features
+
+- Gantt chart with toolbar, editor widget, and task dependencies
+- Row reordering and drag-and-drop
+- Task hierarchy (parent-child) with summary and milestone types
+- REST API routes backed by SQLite (better-sqlite3)
+- Handles Next.js specifics: CSS imports, SSR hydration, full-page layout
+
+## Related
+
+- [SVAR React Gantt docs](https://docs.svar.dev/react/gantt/)
+- [Next.js integration guide](https://docs.svar.dev/react/gantt/category/nextjs)
+- [Source code and issues](https://github.com/svar-widgets/react-gantt)
